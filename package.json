@@ -15,12 +15,18 @@
     "license": "ISC",
     "devDependencies": {
         "@types/classnames": "^2.2.10",
+        "@types/react-router": "^5.1.7",
+        "@types/react-select": "^3.0.13",
         "install": "^0.13.0",
         "npm": "^6.14.5",
         "typescript": "^3.9.5"
     },
     "dependencies": {
         "@material-ui/core": "^4.10.2",
-        "classnames": "^2.2.6"
+        "@material-ui/icons": "^4.9.1",
+        "@peterrogov/baf-utility": "^1.0.1",
+        "classnames": "^2.2.6",
+        "react-router-dom": "^5.2.0",
+        "react-select": "^3.1.0"
     }
 }

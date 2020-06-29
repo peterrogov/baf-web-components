@@ -4,7 +4,8 @@
         "target": "es5",
         "lib": [
             "es6",
-            "dom"
+            "dom",
+            "es2017"
         ],
         "experimentalDecorators": true,
         "allowJs": false,
