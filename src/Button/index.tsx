@@ -4,7 +4,7 @@ import { ButtonProps as MuiButtonProps } from '@material-ui/core/Button'
 import { withStyles, Theme, createStyles, WithStyles } from '@material-ui/core/styles';
 import classNames from 'classnames';
 import { green } from '@material-ui/core/colors';
-import { emphasize, fade } from '@material-ui/core/styles/colorManipulator';
+import { emphasize } from '@material-ui/core/styles/colorManipulator';
 
 const styles = (theme: Theme) => createStyles({
     buttonSuccess: {

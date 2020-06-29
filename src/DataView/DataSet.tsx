@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import { ReactNode, ReactElement } from "react";
+import { ReactNode } from "react";
 import { withStyles, Theme, createStyles, WithStyles } from '@material-ui/core/styles';
 import { green, red, blue, pink } from '@material-ui/core/colors';
 import classNames from 'classnames';

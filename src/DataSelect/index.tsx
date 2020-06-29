@@ -17,7 +17,7 @@ interface Props {
 }
 
 const Select = (props: Props) => {
-    const [items, setItems] = useState(0);
+    //const [items, setItems] = useState(0);
 
     const loadOptions = async (inputValue: string): Promise<any[]> => {
         const val = inputValue.trim();
