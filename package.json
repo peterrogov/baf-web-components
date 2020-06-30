@@ -19,14 +19,17 @@
         "@types/react-select": "^3.0.13",
         "install": "^0.13.0",
         "npm": "^6.14.5",
-        "typescript": "^3.9.5"
+        "typescript": "^3.9.5",
+        "@material-ui/core": "^4.10.2",
+        "@material-ui/icons": "^4.9.1"        
     },
     "dependencies": {
-        "@material-ui/core": "^4.10.2",
-        "@material-ui/icons": "^4.9.1",
         "@peterrogov/baf-utility": "^1.0.1",
         "classnames": "^2.2.6",
-        "react-router-dom": "^5.2.0",
         "react-select": "^3.1.0"
+    },
+    "peerDependencies": {
+        "@material-ui/core": "^4.10.2",
+        "@material-ui/icons": "^4.9.1"
     }
 }

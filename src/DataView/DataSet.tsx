@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { ReactNode } from "react";
-import { withStyles, Theme, createStyles, WithStyles } from '@material-ui/core/styles';
+import { Theme } from '@material-ui/core/styles';
+import { makeStyles, createStyles, withStyles, WithStyles } from '@material-ui/styles';
 import { green, red, blue, pink } from '@material-ui/core/colors';
 import classNames from 'classnames';
 import ReactSelect from 'react-select';
@@ -501,7 +502,7 @@ class EditFilterDialogS<TRecord extends IDataRecord> extends React.Component<Edi
     }
 }
 
-const EditFilterDialog = withStyles(() => { }, { withTheme: true })(EditFilterDialogS);
+const EditFilterDialog = withStyles(createStyles({}), { withTheme: true })(EditFilterDialogS);
 
 interface DataSetProps<TRecord extends IDataRecord, TWhereInput> extends WithStyles<typeof styles> {
     dataSource: IDataConnector<TRecord, any, any>;
@@ -1089,7 +1090,7 @@ class DataSet<TRecord extends IDataRecord, TWhereInput> extends Component<DataSe
                         onClose={() => this.setState({ filterEditorColumnId: undefined })}
                         column={filterEditorColumn}
                         value={this.state.columnFiltersData[filterEditorColumn.id]}
-                        onChange={(result) => {
+                        onChange={(result:any) => {
                             const data = { ...this.state.columnFiltersData };
                             data[filterEditorColumn!.id] = result;
                             this.setState({ columnFiltersData: data, filterEditorColumnId: undefined }, () => {

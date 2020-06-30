@@ -15,13 +15,14 @@ const styles = (theme: Theme) => createStyles({
         fontSize: theme.typography.fontSize,
         backgroundColor: '#ffffff',
         padding: theme.spacing(0, 1),
-        borderRadius: 5
+        borderRadius: 0
     },
     block: {
         display: 'block',
     },
     searchControl: {
-        marginBottom: 0
+        marginBottom: 0,
+        border: '1px solid rgba(0, 0, 0, 0.12)'
     }
 });
 
