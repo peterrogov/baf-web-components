@@ -17,6 +17,7 @@ const styles = (theme: Theme) => createStyles({
         padding: theme.spacing(0, 1),
         borderRadius: 0
     },
+    
     block: {
         display: 'block',
     },
